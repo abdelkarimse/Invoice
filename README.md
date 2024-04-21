@@ -1,5 +1,5 @@
 # Invoice Field Extractor
-![Invoice Field Extractor Logo]("Screenshot 2024-04-21 070818.jpg")
+![Invoice Field Extractor Logo]("818.jpg")
 This is a Flask web application that extracts fields from uploaded PDF invoices using spaCy for NLP processing.
 
 ## Installation
