@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>File Upload</title>
+  </head>
+  <body>
+    <h1 class="text-center py-12 text-2xl text-gray-600 font-bold">
+      File Upload
+    </h1>
+    <div class="container mx-auto flex flex-col justify-center items-center">
+      <form
+        action="/upload"
+        method="post"
+        enctype="multipart/form-data"
+        class="flex flex-col space-y-7"
+      >
+        <input
+          type="file"
+          name="file"
+          id="file"
+          class="text-gray-500 font-semibold file:bg-gray-300 file:text-gray-900 file:p-2 file:border-0 file:rounded-md file:hover:bg-gray-400"
+          accept=".pdf, .jpg, .jpeg, .png, .bmp, .gif, .webp"
+        />
+        <input
+          class="bg-blue-600 hover:bg-blue-700 rounded-md p-2 text-white"
+          type="submit"
+          value="Upload"
+        />
+      </form>
+    </div>
+  </body>
+</html>
